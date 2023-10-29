@@ -1,6 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { WeatherHomeComponent } from './app/components/weather-home/weather-home.component';
 
-bootstrapApplication(AppComponent, appConfig)
+bootstrapApplication(WeatherHomeComponent, appConfig)
   .catch((err) => console.error(err));

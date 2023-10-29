@@ -25,3 +25,31 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Generate Project
+
+```js
+ng new weather-app-standalone --standalone --inline-style --inline-template
+```
+
+# Install Dependencies
+
+```js
+npm i @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons
+```
+
+# Creating Components
+
+```js
+ng g c components/weather-home
+```
+
+```js
+ng g c components/weather-card
+```
+
+# Generating Service
+
+```js
+ng g service _services/weather
+```
