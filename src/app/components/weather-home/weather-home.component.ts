@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -11,7 +12,7 @@ import { WeatherCardComponent } from '../weather-card/weather-card.component';
 @Component({
   selector: 'app-weather-home',
   standalone: true,
-  imports: [FontAwesomeModule, FormsModule, WeatherCardComponent],
+  imports: [NgIf, FontAwesomeModule, FormsModule, WeatherCardComponent],
   template: `
     <div class="search">
       <form #form="ngForm" (submit)="onSubmit()">
